@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gues That Number</title>
     <link rel="stylesheet" href="guessthatnumber.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <div class="game-header"><h3>Guess The Number</h3></div>
-        <div class="game-instruction">
-            <p>Enter a number between 1 - 5 below:</p>
-        </div>
-        <div class="game-input">
-            <input class="gues-number" type="text" placeholder="Enter number">
-        </div>
-        <div class="game-result">
-            <h4>Success!</h4>
-        </div>
-        <div class="btn-container">
+
+        <h3 class="game-header">Guess the number!</h3>
+        <p class="game-instruction">Enter a number between 1 - 5 below:</p>
+        <input class="game-input" type="text" 
+        placeholder="Enter your number here"
+        tabindex="1" autofocus >
+        <h4 class="game-result">Success!</h4>
+         <div class="btn-container">
             <button class="btn-give-up">Give Up</button>
             <button class="btn-guess">Guess</button>
             <button class="btn-play-again">Play Again</button>
-        </div>
+          </div>
 
     </main>
 

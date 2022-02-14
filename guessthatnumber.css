@@ -4,6 +4,12 @@ html,body,main {
     
 }
 
+:root {
+    --success-color: #08971A;
+    --failure-color: #A80808;
+    --text-font:'Lato', sans-serif;
+}
+
 main {
     display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -15,4 +21,41 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.game-header {
+    margin-bottom: 0px;
+    font-size: 2em;
+    font-family: var(--text-font);
+    font-weight: 300;
+    font-style: light;
+}
+.game-instruction {
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-style: normal;
+}
+.game-result {
+    margin: 0;
+    font-size: 1.5em;
+    margin: 8px;
+    color: var(--success-color);
+    /* color: var(--failure-color); */
+    /* visibility: hidden; */
+}
+.game-input {
+    border: none;
+    outline: none;
+    cursor: text;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #F2F2F2;
+    
+}
+.game-result {
+    font-family: var(--text-font);
+    font-size: 2em;
 }
