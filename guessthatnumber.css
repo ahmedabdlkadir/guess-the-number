@@ -58,4 +58,27 @@ main {
 .game-result {
     font-family: var(--text-font);
     font-size: 2em;
+
 }
+
+.btn-container button {
+    width: 90px;
+    height: 30px;
+    font-family: var(--text-font);
+    cursor: pointer;
+    border-radius: 6px;
+    color: #000;
+    margin: 8px;
+}
+.btn-container button:hover{
+ background-color: #c7c7c7;
+ color: #000;
+}
+
+.btn-container .btn-guess {
+    background-color: #000;
+    color: #fff;
+
+}
+
+
