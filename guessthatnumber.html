@@ -14,13 +14,13 @@
     <main>
         <h3 class="game-header">Guess the number!</h3>
         <p class="game-instruction">Enter a number between 1 - 5 below:</p>
-        <input class="game-input" type="text" 
-        placeholder="Enter your number here"
-        tabindex="1" autofocus >
-        <h4 class="game-result" id="success-failure">Success!</h4>
+        <input class="game-input" type="text" id="input-number" name="text"
+               placeholder="Enter your number here"
+               tabindex="1" autofocus >
+        <h4 class="game-result" id="result-text">Success!</h4>
          <div class="btn-container">
-            <button class="btn-clear">Clear</button>
-            <button class="btn-guess">Guess</button>
+            <button class="btn-clear" id="btn-reset">Reset</button>
+            <button class="btn-guess" id="btn-guess">Guess</button>
           </div>
     </main>
     <script src="guessthatnumber.js"></script>
