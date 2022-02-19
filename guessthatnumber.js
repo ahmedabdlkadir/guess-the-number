@@ -2,7 +2,7 @@
 function play() {
 
     let strNumInput = document.getElementById("input-number");
-    let resultText = document.getElementById("result-text");
+    let strResult = document.getElementById("result-text");
     let btnReset = document.getElementById("btn-reset");
     let btnGuess = document.getElementById("btn-guess");
     let numRandom = null;
@@ -15,23 +15,20 @@ function play() {
     function guessTheNumber(){
         numInput = Number(strNumInput.value) ;
         numRandom = getRandomNumber(1,5);
-        resultText.style.display = "block";
-       resultText.innerHTML = ( numInput == numRandom) ? "Success!" : "Failure!";
-       if(resultText.innerHTML == "Success!"){
-           resultText.style.color = "var(--success-color)"
-       }
-       else {
-           resultText.style.color = "var(--failure-color)"
-       }
-       
-       console.log(numRandom);
+        displayResult();
+    }
 
-        // alert(numInput)
+    function displayResult() {
+        strResult.innerHTML = ( numInput == numRandom) ? "Success!" : "Failure!";
+        strResult.style.color = (strResult.innerHTML == "Success!") ?  "var(--success-color)" : "var(--failure-color)";
+        strResult.style.display = "block";
+        if(numInput == 0) strResult.style.display = "none";
     }
 
     function reset(){
-        strNumInput.value = " ";
-        resultText.style.display = "none";
+        strNumInput.value = "";
+        strResult.style.display = "none";
+        strNumInput.reset();
         window.location.reload();
     }
 
