@@ -8,9 +8,7 @@ function play() {
     let numRandom = null;
 
 
-    function getRandomNumber(min, max){
-        return Math.floor(Math.random() * (max - min + 1)  + min);   
-    }
+    function getRandomNumber(min, max){ return Math.floor(Math.random() * (max - min + 1)  + min); }
 
     function guessTheNumber(){
         numInput = Number(strNumInput.value) ;
